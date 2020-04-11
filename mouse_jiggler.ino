@@ -10,7 +10,7 @@
 
 #include <Mouse.h>
 
-# This is runned once, during device initialization
+// This is runned once, during device initialization
 
 void setup()
 {
@@ -19,7 +19,7 @@ void setup()
 
 
 
-# Main loop - move mouse back and forth every 5 seconds
+// Main loop - move mouse back and forth every 5 seconds
 
 void loop()
 {
