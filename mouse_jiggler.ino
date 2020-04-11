@@ -23,15 +23,12 @@ void setup()
 
 void loop()
 {
-  delay(1000);
-
-  while(true) { 
-    Mouse.move(4,0,0);
-    delay(100);
-    Mouse.move(-8,0,0);
-    delay(100);
-    Mouse.move(4,0,0);
-    
-    delay(5000);
-  }
+    delay(60000);
+    Mouse.move(5,0,0);
+    delay(60000);
+    Mouse.move(0,5,0);
+    delay(60000);
+    Mouse.move(-5,0,0);
+    delay(60000);
+    Mouse.move(0,-5,0);
 }
