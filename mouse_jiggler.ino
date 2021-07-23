@@ -17,18 +17,16 @@ void setup()
   Mouse.begin();
 }
 
-
-
-// Main loop - move mouse back and forth every 5 seconds
+#define T_PERIOD 60000
+#define T_INITIAL_DELAY 5000
+#define T_JUMP 10
+// Main loop - move mouse down and up every 5 seconds
 
 void loop()
 {
-    delay(60000);
-    Mouse.move(5,0,0);
-    delay(60000);
-    Mouse.move(0,5,0);
-    delay(60000);
-    Mouse.move(-5,0,0);
-    delay(60000);
-    Mouse.move(0,-5,0);
+    delay(T_INITIAL_DELAY);
+    Mouse.move(0,1,0);
+    delay(T_JUMP);
+    Mouse.move(0,-1,0);
+    delay(T_PERIOD-T_INITIAL_DELAY-T_JUMP);
 }
